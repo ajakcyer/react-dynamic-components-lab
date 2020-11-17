@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Comment from './Comment'
 // are we missing an import?
 
 export default class BlogPost extends Component {
@@ -23,6 +24,7 @@ export default class BlogPost extends Component {
         <Comment commentText={comments[0]} />
         <Comment commentText={comments[0]} />
         */}
+        {comments.map(comment=> <Comment commentText={comment}/>)}
       </div>
     );
   }
